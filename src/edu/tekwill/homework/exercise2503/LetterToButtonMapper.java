@@ -12,21 +12,21 @@ public class LetterToButtonMapper { //Exercise 6
     public static String buttonSelector(String input){
         String message;
 
-        if (input.equals("a") || input.equals("b") || input.equals("c")) {
+        if (input.equalsIgnoreCase("a") || input.equalsIgnoreCase("b") || input.equalsIgnoreCase("c")) {
             message = "The corresponding number is 2";
-        } else if (input.equals("d") || input.equals("e") || input.equals("f")) {
+        } else if (input.equalsIgnoreCase("d") || input.equalsIgnoreCase("e") || input.equalsIgnoreCase("f")) {
             message = "The corresponding number is 3";
-        } else if (input.equals("g") || input.equals("h") || input.equals("i")) {
+        } else if (input.equalsIgnoreCase("g") || input.equalsIgnoreCase("h") || input.equalsIgnoreCase("i")) {
             message = "The corresponding number is 4";
-        } else if (input.equals("j") || input.equals("k") || input.equals("l")) {
+        } else if (input.equalsIgnoreCase("j") || input.equalsIgnoreCase("k") || input.equalsIgnoreCase("l")) {
             message = "The corresponding number is 5";
-        } else if (input.equals("m") || input.equals("n") || input.equals("o")) {
+        } else if (input.equalsIgnoreCase("m") || input.equalsIgnoreCase("n") || input.equalsIgnoreCase("o")) {
             message = "The corresponding number is 6";
-        }else if (input.equals("p") || input.equals("q") || input.equals("r") || input.equals("s")) {
+        }else if (input.equalsIgnoreCase("p") || input.equalsIgnoreCase("q") || input.equalsIgnoreCase("r") || input.equalsIgnoreCase("s")) {
             message = "The corresponding number is 7";
-        }else if (input.equals("t") || input.equals("u") || input.equals("v")) {
+        }else if (input.equalsIgnoreCase("t") || input.equalsIgnoreCase("u") || input.equalsIgnoreCase("v")) {
             message = "The corresponding number is 8";
-        }else if (input.equals("w") || input.equals("x") || input.equals("y") || input.equals("z")) {
+        }else if (input.equalsIgnoreCase("w") || input.equalsIgnoreCase("x") || input.equalsIgnoreCase("y") || input.equalsIgnoreCase("z")) {
             message = "The corresponding number is 8";
         } else {
             message = "This is an invalid input";

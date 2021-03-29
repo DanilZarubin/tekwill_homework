@@ -12,18 +12,20 @@ public class AnimalSound {
 
     public static String animalVoice(String animal){
         String voice = " ";
-        if (animal.equals("Wolf")){
+        if (animal.equalsIgnoreCase("Wolf")){
             voice = "Howl";
-        }else if(animal.equals("Cat")){
+        }else if(animal.equalsIgnoreCase("Cat")){
             voice = "Meow";
-        }else if(animal.equals("Dog")){
+        }else if(animal.equalsIgnoreCase("Dog")){
             voice = "Hoof";
-        }else if(animal.equals("Cow")){
+        }else if(animal.equalsIgnoreCase("Cow")){
             voice = "Mooo";
-        }else if(animal.equals("Sheep")){
+        }else if(animal.equalsIgnoreCase("Sheep")){
             voice = "Baaa";
-        }else if(animal.equals("Snake")){
+        }else if(animal.equalsIgnoreCase("Snake")){
             voice = "Hiss";
+        }else{
+            System.out.println("No such animal in the database");
         }
         return voice;
     }
