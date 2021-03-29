@@ -11,13 +11,14 @@ public class InternetBillCalculator {
             System.out.println("Enter your package and press Enter \n Shall be A, B, C");
             String pack = sc.nextLine();
 
-            if(pack.equalsIgnoreCase("a")){
+            if(pack.equalsIgnoreCase("a")) {
                 System.out.println("Enter the amount of hours used");
                 float hours = sc.nextFloat();
                 if(hours < 0){
                     System.out.println("Amount of hours must be more or equal to 0");
                 } else{
-                    System.out.println("The total charges are "+ billCalc(hours, 2.00F, 10.0F) + "$");
+                    System.out.println("Price of the package is 9.95$");
+                    System.out.println("The total charges are "+ (9.95 + ((hours - 10) * 2.00F)) +  "$");
                 }
             } else if(pack.equalsIgnoreCase("b")){
                 System.out.println("Enter the amount of hours used");
@@ -25,17 +26,14 @@ public class InternetBillCalculator {
                 if(hours < 0){
                     System.out.println("Amount of hours must be more or equal to 0");
                 } else{
-                    System.out.println("The total charges are "+ billCalc(hours, 2.00F, 10.0F) + "$");
+                    System.out.println("Price of the package is 13.95$");
+                    System.out.println("The total charges are "+ (13.95 + (hours - 20)) + "$");
                 }
             } else if (pack.equalsIgnoreCase("c")){
-                System.out.println("You've got an unlimited package");
+                System.out.println("You've got an unlimited package for 19.95$");
             } else{
                 System.out.println("Please be reminded that package shall be A, B, or C");
             }
             sc.close();
         }
-
-    private static float billCalc(float hours, float pricePerHour, float hoursInc){
-       return (hours - hoursInc) * pricePerHour;
-    }
 }
