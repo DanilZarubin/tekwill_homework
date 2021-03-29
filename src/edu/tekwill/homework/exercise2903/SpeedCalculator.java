@@ -11,39 +11,45 @@ public class SpeedCalculator {//Exercise 2
         String env = sc.nextLine();
 
         if (env.equalsIgnoreCase("air")) {
-            System.out.println("Enter the distance in feet");
-            float distance = sc.nextFloat();
-            if (distance < 0) {
-                System.out.println("Distance shall be more or equal to 0");
-            } else {
-                System.out.println("The time to travel is " + distance/1100  + "seconds");
-            }
-        }else if (env.equalsIgnoreCase("water")) {
-            System.out.println("Enter the distance in feet");
-            float distance = sc.nextFloat();
-            if (distance < 0) {
-            System.out.println("Distance shall be more or equal to 0");
-            } else {
-            System.out.println("The time to travel is " + distance/4900 + "seconds");
-        }
-        }
-        else if (env.equalsIgnoreCase("steel")) {
-            System.out.println("Enter the distance in feet");
-            float distance = sc.nextFloat();
-            if (distance < 0) {
-                System.out.println("Distance shall be more or equal to 0");
-            } else {
-                System.out.println("The time to travel is " + distance/16400 + "seconds");
-            }
+            airCalc();
+        } else if (env.equalsIgnoreCase("water")) {
+            waterCalc();
+        } else if (env.equalsIgnoreCase("steel")) {
+            steelCalc();
         } else {
-            System.out.println("Please be reminded that package shall be A, B, or C");
+            System.out.println("Please be reminded that environment shall be air, water, or steel");
         }
         sc.close();
-
-
     }
 
-    private static float timeCalc(float speed, float distance) {
-        return distance / speed;
+    public static void airCalc() {
+        System.out.println("Enter the distance in feet");
+        float distance = new Scanner(System.in).nextFloat();
+        if (distance < 0) {
+            System.out.println("Distance shall be more or equal to 0");
+        } else {
+            System.out.println("The time to travel is " + distance / 1100 + "seconds");
+        }
+    }
+
+    public static void waterCalc() {
+
+        System.out.println("Enter the distance in feet");
+        float distance = new Scanner(System.in).nextFloat();
+        if (distance < 0) {
+            System.out.println("Distance shall be more or equal to 0");
+        } else {
+            System.out.println("The time to travel is " + distance / 4900 + "seconds");
+        }
+    }
+
+    public static void steelCalc() {
+        System.out.println("Enter the distance in feet");
+        float distance = new Scanner(System.in).nextFloat();
+        if (distance < 0) {
+            System.out.println("Distance shall be more or equal to 0");
+        } else {
+            System.out.println("The time to travel is " + distance / 16400 + "seconds");
+        }
     }
 }
