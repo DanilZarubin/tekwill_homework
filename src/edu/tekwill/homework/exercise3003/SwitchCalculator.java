@@ -12,18 +12,27 @@ public class SwitchCalculator { //Exercise 3
         System.out.println("enter the second number");
         final float secondNum = scanner.nextFloat();
 
-        float sum = firstNum + secondNum;
-        float sub = firstNum - secondNum;
-        float mult = firstNum * secondNum;
-        float div = firstNum / secondNum;
-
+        float result;
 
         switch (operator){
-            case "+" : System.out.println(firstNum + " + " + secondNum + " = " + sum); break;
-            case "-" : System.out.println(firstNum + " - " + secondNum + " = " + sub); break;
-            case "*" : System.out.println(firstNum + " * " + secondNum + " = " + mult); break;
-            case "/" : System.out.println(firstNum + " / " + secondNum + " = " + div); break;
-            default : System.out.println("you've entered either a wrong operator, either an invalid value");
+            case "+" :
+                result = firstNum + secondNum;
+                System.out.println(firstNum + " + " + secondNum + " = " + result);
+                break;
+            case "-" :
+                result = firstNum - secondNum;
+                System.out.println(firstNum + " - " + secondNum + " = " + result);
+                break;
+            case "*" :
+                result = firstNum * secondNum;
+                System.out.println(firstNum + " * " + secondNum + " = " + result);
+                break;
+            case "/" :
+                result = firstNum / secondNum;
+                System.out.println(firstNum + " / " + secondNum + " = " + result);
+                break;
+            default :
+                System.out.println("you've entered either a wrong operator, either an invalid value");
         }
     }
 }
