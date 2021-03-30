@@ -22,17 +22,4 @@ public class SmartHome {
             default: System.out.println("unsupported command code");
         }
     }
-
-    /*
-    Write a Java program which will enable or disable a device in your house based on the code entered by user.
-Test data
-Input code: 0
-Expected output:
-You've enabled the lights in the bathroom
-Another example -
-Input key: 1
-Expected output:
-You've disabled the lights in the bathroom
-The devices and printed statements are completely up to you. You decide what does each code does. Limit yourself to 10 cases, so it means 5 devices with 2 options: enable/disabled, and each action assigned to a code, which is also up to your choosing.
-     */
 }

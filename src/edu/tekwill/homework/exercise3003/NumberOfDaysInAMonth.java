@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 public class NumberOfDaysInAMonth { //Exercise 4
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter the month [1-12]");
-            int day = scanner.nextInt();
+            int month = new Scanner(System.in).nextInt();
 
-            switch (day) {
+            switch (month) {
                 case 1:
                 case 3:
                 case 5:

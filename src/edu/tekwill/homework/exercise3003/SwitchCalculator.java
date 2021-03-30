@@ -11,7 +11,6 @@ public class SwitchCalculator { //Exercise 3
         final float firstNum = scanner.nextFloat();
         System.out.println("enter the second number");
         final float secondNum = scanner.nextFloat();
-
         float result;
 
         switch (operator){

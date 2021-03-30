@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class DaysOfTheWeek { //Exercise 5
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the day [1-7]");
-        int day = scanner.nextInt();
+        int day = new Scanner(System.in).nextInt();
 
         switch (day) {
             case 1: System.out.println("monday"); break;
